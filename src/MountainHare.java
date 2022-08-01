@@ -6,11 +6,27 @@ public class MountainHare {
     int jumpLength;
     static String color;
 
-    public MountainHare(int age, double weight, int jumpLength, String color) {
+    public MountainHare(int age, double weight, int jumpLength) {
         this.age = age;
         this.weight = weight;
         this.jumpLength = jumpLength;
-        this.color = color;
+    }
+
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setJumpLength(int jumpLength) {
+        this.jumpLength = jumpLength;
+    }
+
+    public static void setColor(String color) {
+        MountainHare.color = color;
     }
 
     @Override
